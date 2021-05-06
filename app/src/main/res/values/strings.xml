@@ -6,5 +6,6 @@
     <string name="placeholder">Ex : Placeholder</string>
     <string name="button_suiv">SUIVANT</string>
     <string name="adresse_e_mail">Adresse e-mail</string>
+    <string name="r_ponse">Réponse</string>
 
 </resources>

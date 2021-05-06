@@ -12,7 +12,7 @@
         <com.google.android.material.card.MaterialCardView
 
             android:layout_width="1445px"
-            android:layout_height="215px"
+            android:layout_height="350px"
             android:layout_centerInParent="true"
             android:visibility="visible"
             app:cardBackgroundColor="@color/backgroundQuestion"
@@ -27,12 +27,12 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:textColor="@color/colorPrimaryDark"
                     android:layout_height="35px"
                     android:layout_marginTop="20px"
                     android:paddingStart="72px"
                     android:text="Title"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/colorPrimaryDark" />
 
                 <View
                     android:id="@+id/view2"
@@ -53,16 +53,16 @@
                     android:hint="Exemple : Un café avec une tartine de beurre..."
                     android:paddingStart="82px"
                     android:paddingEnd="72px"
+                    android:paddingBottom="20px"
+                    app:boxBackgroundColor="@color/fieldColor"
                     app:counterEnabled="true"
-                    app:counterMaxLength="100"
-                    app:boxBackgroundColor="@color/fieldColor">
+                    app:counterMaxLength="100">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress">
-
-                    </com.google.android.material.textfield.TextInputEditText>
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="textEmailAddress" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
