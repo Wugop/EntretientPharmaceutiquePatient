@@ -11,4 +11,5 @@
     <color name="fieldColor">#FBFBFB</color>
     <color name="plaholderColor">#D0D0D0</color>
     <color name="clickableColor">#52897F</color>
+    <color name="backgroundQuestion">#FFFFFF</color>
 </resources>
