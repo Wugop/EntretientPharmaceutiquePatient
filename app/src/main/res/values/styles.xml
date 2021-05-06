@@ -7,4 +7,113 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="card_short_question" parent="CardView">
+        <item name="android:layout_width">1443px</item>
+        <item name="android:layout_height">190px</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:elevation">10px</item>
+    </style>
+
+    <style name="card_long_question" parent="CardView">
+        <item name="android:layout_width">1443px</item>
+        <item name="android:layout_height">350px</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:elevation">10px</item>
+    </style>
+
+    <style name="relative_layout_short_question" parent="CardView">
+        <item name="android:layout_width">1443px</item>
+        <item name="android:layout_height">190px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="relative_layout_long_question" parent="@android:style/Widget">
+        <item name="android:layout_width">1443px</item>
+        <item name="android:layout_height">350px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="relative_layout_container_question" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginHorizontal">70px</item>
+        <item name="android:layout_marginVertical">35px</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="title_question" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45px</item>
+
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textColor">@color/labelColor</item>
+    </style>
+
+    <style name="title_line" parent="@android:style/Widget">
+        <item name="android:layout_width">440px</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/headerLineColor</item>
+    </style>
+
+    <style name="answer" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/fieldColor</item>
+        <item name="android:ems">1</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:textSize">23px</item>
+        <item name="android:layout_marginTop">20px</item>
+
+        <style name="group_label" parent="Widget.AppCompat.TextView">
+            <item name="android:text">@string/label_groupe</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/labelColor</item>
+            <item name="android:textSize">30px</item>
+        </style>
+
+        <style name="question_label" parent="Widget.AppCompat.TextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:text">@string/label_question</item>
+            <item name="android:textSize">23px</item>
+            <item name="android:textColor">@color/labelColor</item>
+        </style>
+
+        <style name="question_field" parent="Widget.AppCompat.EditText">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">65px</item>
+            <item name="android:background">@drawable/text_field</item>
+            <item name="android:hint">@string/placeholder</item>
+            <item name="android:textColorHint">@color/plaholderColor</item>
+            <item name="android:textSize">23px</item>
+            <item name="android:paddingLeft">20px</item>
+        </style>
+
+        <style name="button" parent="TextAppearance.AppCompat">
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_width">255px</item>
+            <item name="android:layout_weight">match_parent</item>
+            <item name="android:layout_centerInParent">true</item>
+            <item name="android:background">@drawable/button</item>
+            <item name="android:elevation">10px</item>
+            <item name="android:text">@string/button_suiv</item>
+            <item name="android:textColor">#FFFFFF</item>
+            <item name="android:textSize">30px</item>
+        </style>
+
+        <style name="group_content" parent="TextAppearance.AppCompat">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:padding">80px</item>
+        </style>
+    </style>
+
 </resources>

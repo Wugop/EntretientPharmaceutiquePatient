@@ -3,4 +3,12 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="backgroundColor">#E1ECE6</color>
+    <color name="labelColor">#3D4966</color>
+    <color name="headerLineColor">#C2C2C2</color>
+    <color name="borderColor">#E9E9E9</color>
+    <color name="fieldColor">#FBFBFB</color>
+    <color name="plaholderColor">#D0D0D0</color>
+    <color name="clickableColor">#52897F</color>
 </resources>

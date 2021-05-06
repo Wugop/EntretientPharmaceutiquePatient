@@ -136,6 +136,7 @@
                                             style="@style/question_field"
                                             android:layout_height="65px"
                                             android:hint="Poids"
+                                            android:paddingLeft="0px"
                                             android:textAlignment="center"></EditText>
 
 
@@ -160,6 +161,8 @@
                                     </LinearLayout>
 
                                 </RelativeLayout>
+                                
+                                
 
                             </RelativeLayout>
 
@@ -198,6 +201,66 @@
                             android:background="@color/headerLineColor" />
                     </LinearLayout>
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="405px"
+                        android:layout_alignParentBottom="true">
+                        
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/question_label"></TextView>
+                                <EditText
+                                    style="@style/question_field"
+                                    android:layout_width="340px">
+                                </EditText>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="445px"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true">
+
+                                <LinearLayout
+                                    android:layout_width="170px"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/question_label"></TextView>
+                                    <EditText
+                                        style="@style/question_field">
+                                    </EditText>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="240px"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentEnd="true">
+
+                                    <TextView
+                                        style="@style/question_label"></TextView>
+                                    <EditText
+                                        style="@style/question_field">
+                                    </EditText>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
