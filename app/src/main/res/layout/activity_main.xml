@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="1445px"
+        android:layout_height="1072px"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            style="@style/card_long_question"
+            app:cardCornerRadius="30px"
+            app:cardPreventCornerOverlap="false">
+
+
+            <RelativeLayout style="@style/relative_layout_long_question">
+
+                <RelativeLayout style="@style/relative_layout_container_question">
+
+                    <TextView
+                        android:id="@+id/TitreQuestion"
+                        style="@style/title_question"
+                        android:text="Que prenez-vous comme petit-déjeuné ?" />
+
+                    <View
+                        style="@style/title_line"
+                        android:layout_below="@+id/TitreQuestion" />
+
+                    <EditText
+                        android:id="@+id/ReponseQuestion"
+                        style="@style/answer"
+                        android:layout_below="@+id/TitreQuestion"
+                        android:layout_marginTop="20px"
+                        android:gravity="top"
+                        android:hint="Ex : Un café avec une tartine de beurre" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
