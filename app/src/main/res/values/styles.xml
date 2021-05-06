@@ -6,4 +6,45 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="title_card_question" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35px</item>
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:paddingStart">72px</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">@color/labelColor</item>
+    </style>
+
+    <style name="layout_card_question" parent="CardView">
+        <item name="android:layout_width">1445px</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:visibility">visible</item>
+        <item name="cardCornerRadius">15px</item>
+        <item name="cardBackgroundColor">@color/backgroundCards</item>
+        <item name="cardElevation">10px</item>
+        <item name="strokeColor">@color/backgroundCards</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="grey_line" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">440px</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">72px</item>
+        <item name="android:layout_marginTop">11px</item>
+        <item name="android:background">@color/headerLineColor</item>
+    </style>
+
+    <style name="layout_text_question" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">10px</item>
+        <item name="android:layout_marginBottom">15px</item>
+        <item name="android:paddingStart">82px</item>
+        <item name="android:paddingEnd">72px</item>
+        <item name="boxBackgroundColor">@color/fieldColor</item>
+        <item name="expandedHintEnabled">false</item>
+    </style>
+
 </resources>

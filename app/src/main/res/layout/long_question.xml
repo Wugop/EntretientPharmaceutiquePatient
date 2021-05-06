@@ -10,15 +10,9 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.card.MaterialCardView
-
-            android:layout_width="1445px"
-            android:layout_height="350px"
-            android:layout_centerInParent="true"
-            android:visibility="visible"
-            app:cardBackgroundColor="@color/backgroundQuestion"
-            app:cardElevation="10px"
-            app:strokeColor="@color/backgroundQuestion"
-            app:strokeWidth="1dp">
+            android:id="@+id/card_long_question"
+            style="@style/layout_card_question"
+            android:layout_height="350px">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -26,43 +20,25 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35px"
-                    android:layout_marginTop="20px"
-                    android:paddingStart="72px"
-                    android:text="Title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:id="@+id/title_long_question"
+                    style="@style/title_card_question"
+                    android:text="Lorem ipsum dolor" />
 
                 <View
-                    android:id="@+id/view2"
-                    android:layout_width="440px"
-                    android:layout_height="1px"
-                    android:layout_marginLeft="72px"
-                    android:layout_marginTop="11px"
-                    android:background="@color/headerLineColor" />
+                    android:id="@+id/grey_line_long_question"
+                    style="@style/grey_line" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/test"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerInParent="true"
-                    android:layout_marginTop="10px"
-                    android:layout_marginBottom="15px"
-                    android:hint="Exemple : Un café avec une tartine de beurre..."
-                    android:paddingStart="82px"
-                    android:paddingEnd="72px"
-                    android:paddingBottom="20px"
-                    app:boxBackgroundColor="@color/fieldColor"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="100">
+                    android:id="@+id/layout_long_question"
+                    style="@style/layout_text_question"
+                    app:placeholderText="Morbi vitae est metus. Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ac libero sit amet sapien pellentesque egestas. Pellentesque nec ex ultrices, lobortis augue a, pharetra nulla. Curabitur nec sem lacinia, consequat mauris eget, elementum sem. Aliquam cursus magna in arcu ultricies, eget vehicula sapien posuere. Suspendisse vulputate lacinia urna vehicula ornare. Cras consequat urna orci.">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/answer_long_question"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="top"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textMultiLine" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
