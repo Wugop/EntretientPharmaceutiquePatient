@@ -7,6 +7,7 @@
     <string name="button_suiv">SUIVANT</string>
     <string name="adresse_e_mail">Adresse e-mail</string>
     <string name="r_ponse">Réponse</string>
-    <string name="profil">PROFIL</string>
+    <string name="profil">Profil</string>
+    <string name="informations">Informations</string>
 
 </resources>
