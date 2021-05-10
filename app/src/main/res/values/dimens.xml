@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="question_group_maxHeight"></dimen>
+    <dimen name="question_width">1445px</dimen>
+
+    <dimen name="space_between_question">35px</dimen>
+
+    <dimen name="short_question_height">215px</dimen>
+</resources>
