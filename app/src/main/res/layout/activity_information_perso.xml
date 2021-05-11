@@ -110,7 +110,7 @@
                                     android:cursorVisible="false"
                                     android:focusable="false"
                                     android:focusableInTouchMode="false"
-                                    app:placeholderText="01/01/1950">
+                                    app:placeholderText="01/01/1975">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/profil_birthday"
@@ -140,13 +140,14 @@
 
                                 <com.google.android.material.textfield.TextInputLayout
                                     style="@style/text_input_profil"
-                                    app:placeholderText="60"
+                                    app:placeholderText="75"
                                     app:suffixText="kg">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/profil_weight"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
+                                        android:digits="0123456789"
                                         android:inputType="number"
                                         android:maxLength="3" />
 
@@ -175,6 +176,7 @@
                                         android:id="@+id/profil_height"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
+                                        android:digits="0123456789"
                                         android:inputType="number"
                                         android:maxLength="3" />
 
@@ -277,6 +279,7 @@
                                     android:id="@+id/profil_postcode"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:digits="0123456789+"
                                     android:inputType="number"
                                     android:maxLength="5" />
 
@@ -335,13 +338,14 @@
                             <com.google.android.material.textfield.TextInputLayout
                                 style="@style/text_input_profil"
                                 android:layout_width="500px"
-                                app:placeholderText="1710830583899 01">
+                                app:placeholderText="1 75 01 49 588 157 80">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/profil_social_security_number"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:inputType="number" />
+                                    android:inputType="number"
+                                    android:maxLength="21" />
 
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -360,19 +364,18 @@
                                 android:textSize="25px" />
 
                             <com.google.android.material.textfield.TextInputLayout
-                                style="@style/text_input_profil"
-                                app:placeholderText="Regime géneral">
+                                style="@style/drop_down_menu_profil"
+                                app:placeholderText="Régime général">
 
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/profil_affiliate_scheme"
+                                <AutoCompleteTextView
+                                    android:id="@+id/auto_complete_profil"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:inputType="text" />
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none" />
 
                             </com.google.android.material.textfield.TextInputLayout>
 
                         </LinearLayout>
-
 
                     </LinearLayout>
 
@@ -405,8 +408,8 @@
                                     android:id="@+id/profil_phone_number"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:digits="0123456789+"
                                     android:inputType="phone"
-                                    android:digits="0123456789"
                                     android:maxLength="14" />
 
                             </com.google.android.material.textfield.TextInputLayout>
@@ -451,8 +454,9 @@
 
         <Button
             android:id="@+id/profil_next_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="230px"
+            android:layout_height="80px"
+            android:elevation="10px"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="Suivant" />
