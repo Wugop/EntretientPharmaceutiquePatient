@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:id="@+id/card_short_question"
+    style="@style/layout_card_question"
+    android:layout_height="215px">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="72px">
 
-        <com.google.android.material.card.MaterialCardView
+        <TextView
+            android:id="@+id/title_short_question"
+            style="@style/title_card_question"
+            android:text="Lorem ipsum dolor" />
 
-            android:id="@+id/card_short_question"
-            style="@style/layout_card_question"
-            android:layout_height="215px">
 
-            <LinearLayout
+        <View
+            android:id="@+id/grey_line_short_question"
+            style="@style/grey_line" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_short_question"
+            style="@style/layout_text_question"
+            app:counterEnabled="true"
+            app:counterMaxLength="110"
+            app:placeholderText="Morbi vitae est metus.Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_short_question"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="72px">
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress">
 
-                <TextView
-                    android:id="@+id/title_short_question"
-                    style="@style/title_card_question"
-                    android:text="Lorem ipsum dolor" />
+            </com.google.android.material.textfield.TextInputEditText>
 
+        </com.google.android.material.textfield.TextInputLayout>
 
-                <View
-                    android:id="@+id/grey_line_short_question"
-                    style="@style/grey_line" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_short_question"
-                    style="@style/layout_text_question"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="110"
-                    app:placeholderText="Morbi vitae est metus.Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu.">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/answer_short_question"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress">
-
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
+    </LinearLayout>
 
 
-        </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.card.MaterialCardView>
 
 
-    </RelativeLayout>
-
-
-</RelativeLayout>

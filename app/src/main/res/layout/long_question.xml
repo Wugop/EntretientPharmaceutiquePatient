@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
 
-    <RelativeLayout
+    android:id="@+id/card_long_question"
+    style="@style/layout_card_question"
+    android:layout_height="350px">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="82px">
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card_long_question"
-            style="@style/layout_card_question"
-            android:layout_height="350px">
+        <TextView
+            android:id="@+id/title_long_question"
+            style="@style/title_card_question"
+            android:text="Lorem ipsum dolor" />
 
-            <LinearLayout
+        <View
+            android:id="@+id/grey_line_long_question"
+            style="@style/grey_line" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_long_question"
+            style="@style/layout_text_question"
+            app:placeholderText="Morbi vitae est metus. Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ac libero sit amet sapien pellentesque egestas. Pellentesque nec ex ultrices, lobortis augue a, pharetra nulla. Curabitur nec sem lacinia, consequat mauris eget, elementum sem. Aliquam cursus magna in arcu ultricies, eget vehicula sapien posuere. Suspendisse vulputate lacinia urna vehicula ornare. Cras consequat urna orci.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_long_question"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="82px">
+                android:gravity="top"
+                android:inputType="textMultiLine" />
 
-                <TextView
-                    android:id="@+id/title_long_question"
-                    style="@style/title_card_question"
-                    android:text="Lorem ipsum dolor" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-                <View
-                    android:id="@+id/grey_line_long_question"
-                    style="@style/grey_line" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_long_question"
-                    style="@style/layout_text_question"
-                    app:placeholderText="Morbi vitae est metus. Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ac libero sit amet sapien pellentesque egestas. Pellentesque nec ex ultrices, lobortis augue a, pharetra nulla. Curabitur nec sem lacinia, consequat mauris eget, elementum sem. Aliquam cursus magna in arcu ultricies, eget vehicula sapien posuere. Suspendisse vulputate lacinia urna vehicula ornare. Cras consequat urna orci.">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/answer_long_question"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        android:inputType="textMultiLine" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
+    </LinearLayout>
 
 
-        </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.card.MaterialCardView>
 
-
-    </RelativeLayout>
-
-
-</RelativeLayout>
