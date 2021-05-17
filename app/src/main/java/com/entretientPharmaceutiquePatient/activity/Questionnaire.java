@@ -15,7 +15,7 @@ public class Questionnaire extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionnaire);
 
-        QuestionGroup questionGroup = new QuestionGroup();
+        QuestionGroupFragment questionGroup = new QuestionGroupFragment();
 
         //inject groupe de question dans l'activity
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -23,4 +23,6 @@ public class Questionnaire extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
+
 }
