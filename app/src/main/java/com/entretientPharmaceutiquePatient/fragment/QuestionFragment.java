@@ -27,8 +27,8 @@ public class QuestionFragment extends Fragment {
 
     private View choixDuLayout(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container){
         switch (type){
-            case "short": return inflater.inflate(R.layout.short_question, container, false);
-            case "long" : return inflater.inflate(R.layout.long_question, container, false);
+            case "short": return inflater.inflate(R.layout.question_courte, container, false);
+            case "long" : return inflater.inflate(R.layout.question_longue, container, false);
         }
         return null;
     }
