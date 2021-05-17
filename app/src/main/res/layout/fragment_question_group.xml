@@ -3,15 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:clipChildren="false"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp"
         android:orientation="vertical"
         android:layout_centerInParent="true"
-        android:clipToPadding="false">
+        android:padding="20px"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
 
 
         <com.google.android.material.card.MaterialCardView
@@ -23,7 +26,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="82px">
 
                 <TextView
                     android:id="@+id/title_long_question"
@@ -42,164 +46,29 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/space_between_question" />
 
-        <com.google.android.material.card.MaterialCardView
-
-            android:id="@+id/card_short_question"
-            style="@style/layout_card_question"
-            android:layout_height="215px">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/title_short_question"
-                    android:layout_width="match_parent"
-                    android:layout_height="35px"
-                    android:layout_marginTop="20px"
-                    android:paddingStart="72px"
-                    android:text="Lorem ipsum dolor"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimaryDark" />
-
-                <View
-                    android:id="@+id/grey_line_short_question"
-                    style="@style/grey_line" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_short_question"
-                    style="@style/layout_text_question"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="110"
-                    app:placeholderText="Morbi vitae est metus.Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu.">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/answer_short_question"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress">
-
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-        </com.google.android.material.card.MaterialCardView>
+        <FrameLayout
+            android:id="@+id/Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="@dimen/space_between_question" />
 
-        <com.google.android.material.card.MaterialCardView
-
-            android:id="@+id/card_short_question"
-            style="@style/layout_card_question"
-            android:layout_height="215px"
-            tools:ignore="DuplicateIds">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/title_short_question"
-                    android:layout_width="match_parent"
-                    android:layout_height="35px"
-                    android:layout_marginTop="20px"
-                    android:paddingStart="72px"
-                    android:text="Lorem ipsum dolor"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimaryDark"
-                    tools:ignore="DuplicateIds" />
-
-                <View
-                    android:id="@+id/grey_line_short_question"
-                    style="@style/grey_line"
-                    tools:ignore="DuplicateIds" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_short_question"
-                    style="@style/layout_text_question"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="110"
-                    app:placeholderText="Morbi vitae est metus.Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu."
-                    tools:ignore="DuplicateIds">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/answer_short_question"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress">
-
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-        </com.google.android.material.card.MaterialCardView>
+        <FrameLayout
+            android:id="@+id/Question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="@dimen/space_between_question" />
 
-        <com.google.android.material.card.MaterialCardView
-
-            android:id="@+id/card_short_question"
-            style="@style/layout_card_question"
-            android:layout_height="215px"
-            tools:ignore="DuplicateIds">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/title_short_question"
-                    android:layout_width="match_parent"
-                    android:layout_height="35px"
-                    android:layout_marginTop="20px"
-                    android:paddingStart="72px"
-                    android:text="Lorem ipsum dolor"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimaryDark"
-                    tools:ignore="DuplicateIds" />
-
-                <View
-                    android:id="@+id/grey_line_short_question"
-                    style="@style/grey_line"
-                    tools:ignore="DuplicateIds" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_short_question"
-                    style="@style/layout_text_question"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="110"
-                    app:placeholderText="Morbi vitae est metus.Integer scelerisque lacus a blandit interdum. Class aptent taciti sociosqu."
-                    tools:ignore="DuplicateIds">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/answer_short_question"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"
-                        tools:ignore="DuplicateIds">
-
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-        </com.google.android.material.card.MaterialCardView>
-
+        <FrameLayout
+            android:id="@+id/Question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
