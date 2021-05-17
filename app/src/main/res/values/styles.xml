@@ -60,6 +60,22 @@
         <item name="placeholderTextColor">@color/placeholderText</item>
     </style>
 
+    <style name="drop_down_menu_profil" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">45px</item>
+        <item name="boxBackgroundColor">@color/fieldColor</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="boxCornerRadiusBottomEnd">10px</item>
+        <item name="boxCornerRadiusBottomStart">10px</item>
+        <item name="boxCornerRadiusTopEnd">10px</item>
+        <item name="boxCornerRadiusTopStart">10px</item>
+        <item name="boxStrokeColor">@color/labelColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="placeholderTextColor">@color/placeholderText</item>
+    </style>
+
     <style name="text_profil" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:textColor">@color/labelColor</item>
 
